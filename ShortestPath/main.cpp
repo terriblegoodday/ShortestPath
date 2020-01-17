@@ -7,9 +7,19 @@
 //
 
 #include <iostream>
+#include "ShortestPathLib.hpp"
+#include "Global.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    ShortestPathLib::AdjacencyList adjacent(MAX);
+    ShortestPathLib::Weights weights;
+    ShortestPathLib::AdjacencyList &adjacentRef = adjacent;
+    ShortestPathLib::Weights &weightsRef = weights;
+    ShortestPathLib::readGraphFromFile("test1.txt", adjacentRef, weightsRef);
+    ShortestPathLib::Graph graph = {adjacentRef, weightsRef};
+    
+    std::vector<int> t = ShortestPathLib::shortestPath(graph, 0, 5);
+    
     return 0;
 }

@@ -7,27 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770B932623D1F284005D8915 /* test1.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770B932523D1F27A005D8915 /* test1.txt */; };
+		770B932F23D1F980005D8915 /* ShortestPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 770B932E23D1F980005D8915 /* ShortestPathTests.m */; };
+		770B933423D1F9B3005D8915 /* ShortestPathLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770DBD7F23D1C49000C16184 /* ShortestPathLib.cpp */; };
 		770DBD7623D1C41C00C16184 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770DBD7523D1C41C00C16184 /* main.cpp */; };
+		770DBD8123D1C49000C16184 /* ShortestPathLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770DBD7F23D1C49000C16184 /* ShortestPathLib.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		770DBD7023D1C41C00C16184 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				770B932623D1F284005D8915 /* test1.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		770B932523D1F27A005D8915 /* test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test1.txt; sourceTree = "<group>"; };
+		770B932723D1F92E005D8915 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		770B932C23D1F980005D8915 /* ShortestPathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortestPathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		770B932E23D1F980005D8915 /* ShortestPathTests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ShortestPathTests.m; sourceTree = "<group>"; };
+		770B933023D1F980005D8915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		770B933523D1FB64005D8915 /* test2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test2.txt; sourceTree = "<group>"; };
 		770DBD7223D1C41C00C16184 /* ShortestPath */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShortestPath; sourceTree = BUILT_PRODUCTS_DIR; };
 		770DBD7523D1C41C00C16184 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		770DBD7F23D1C49000C16184 /* ShortestPathLib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShortestPathLib.cpp; sourceTree = "<group>"; };
+		770DBD8023D1C49000C16184 /* ShortestPathLib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShortestPathLib.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		770B932923D1F980005D8915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		770DBD6F23D1C41C00C16184 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		770B932D23D1F980005D8915 /* ShortestPathTests */ = {
+			isa = PBXGroup;
+			children = (
+				770B932E23D1F980005D8915 /* ShortestPathTests.m */,
+				770B933023D1F980005D8915 /* Info.plist */,
+			);
+			path = ShortestPathTests;
+			sourceTree = "<group>";
+		};
 		770DBD6923D1C41C00C16184 = {
 			isa = PBXGroup;
 			children = (
 				770DBD7423D1C41C00C16184 /* ShortestPath */,
+				770B932D23D1F980005D8915 /* ShortestPathTests */,
 				770DBD7323D1C41C00C16184 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				770DBD7223D1C41C00C16184 /* ShortestPath */,
+				770B932C23D1F980005D8915 /* ShortestPathTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,14 +88,60 @@
 		770DBD7423D1C41C00C16184 /* ShortestPath */ = {
 			isa = PBXGroup;
 			children = (
+				770DBD7E23D1C47A00C16184 /* resources */,
+				770DBD7D23D1C47600C16184 /* src */,
+				770DBD7C23D1C47000C16184 /* include */,
 				770DBD7523D1C41C00C16184 /* main.cpp */,
 			);
 			path = ShortestPath;
 			sourceTree = "<group>";
 		};
+		770DBD7C23D1C47000C16184 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				770DBD8023D1C49000C16184 /* ShortestPathLib.hpp */,
+				770B932723D1F92E005D8915 /* Global.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		770DBD7D23D1C47600C16184 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				770DBD7F23D1C49000C16184 /* ShortestPathLib.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		770DBD7E23D1C47A00C16184 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				770B932523D1F27A005D8915 /* test1.txt */,
+				770B933523D1FB64005D8915 /* test2.txt */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		770B932B23D1F980005D8915 /* ShortestPathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770B933123D1F980005D8915 /* Build configuration list for PBXNativeTarget "ShortestPathTests" */;
+			buildPhases = (
+				770B932823D1F980005D8915 /* Sources */,
+				770B932923D1F980005D8915 /* Frameworks */,
+				770B932A23D1F980005D8915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortestPathTests;
+			productName = ShortestPathTests;
+			productReference = 770B932C23D1F980005D8915 /* ShortestPathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		770DBD7123D1C41C00C16184 /* ShortestPath */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 770DBD7923D1C41C00C16184 /* Build configuration list for PBXNativeTarget "ShortestPath" */;
@@ -91,6 +168,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Eduard Dzhumagaliev";
 				TargetAttributes = {
+					770B932B23D1F980005D8915 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					770DBD7123D1C41C00C16184 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -110,15 +190,36 @@
 			projectRoot = "";
 			targets = (
 				770DBD7123D1C41C00C16184 /* ShortestPath */,
+				770B932B23D1F980005D8915 /* ShortestPathTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		770B932A23D1F980005D8915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		770B932823D1F980005D8915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770B933423D1F9B3005D8915 /* ShortestPathLib.cpp in Sources */,
+				770B932F23D1F980005D8915 /* ShortestPathTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		770DBD6E23D1C41C00C16184 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770DBD8123D1C49000C16184 /* ShortestPathLib.cpp in Sources */,
 				770DBD7623D1C41C00C16184 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +227,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		770B933223D1F980005D8915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = ShortestPathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = terriblegoodday.ShortestPathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		770B933323D1F980005D8915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = ShortestPathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = terriblegoodday.ShortestPathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		770DBD7723D1C41C00C16184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -238,6 +373,8 @@
 		770DBD7A23D1C41C00C16184 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -248,6 +385,8 @@
 		770DBD7B23D1C41C00C16184 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -258,6 +397,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		770B933123D1F980005D8915 /* Build configuration list for PBXNativeTarget "ShortestPathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770B933223D1F980005D8915 /* Debug */,
+				770B933323D1F980005D8915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		770DBD6D23D1C41C00C16184 /* Build configuration list for PBXProject "ShortestPath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
