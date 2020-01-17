@@ -10,6 +10,7 @@
 		770B932623D1F284005D8915 /* test1.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770B932523D1F27A005D8915 /* test1.txt */; };
 		770B932F23D1F980005D8915 /* ShortestPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 770B932E23D1F980005D8915 /* ShortestPathTests.m */; };
 		770B933423D1F9B3005D8915 /* ShortestPathLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770DBD7F23D1C49000C16184 /* ShortestPathLib.cpp */; };
+		770B933623D1FC41005D8915 /* test2.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770B933523D1FB64005D8915 /* test2.txt */; };
 		770DBD7623D1C41C00C16184 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770DBD7523D1C41C00C16184 /* main.cpp */; };
 		770DBD8123D1C49000C16184 /* ShortestPathLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 770DBD7F23D1C49000C16184 /* ShortestPathLib.cpp */; };
 /* End PBXBuildFile section */
@@ -22,6 +23,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				770B932623D1F284005D8915 /* test1.txt in CopyFiles */,
+				770B933623D1FC41005D8915 /* test2.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

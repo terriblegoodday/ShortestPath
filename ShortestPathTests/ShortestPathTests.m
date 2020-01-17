@@ -49,7 +49,7 @@
     ShortestPathLib::AdjacencyList &adjacentRef = adjacent;
     ShortestPathLib::Weights &weightsRef = weights;
     
-    ShortestPathLib::readGraphFromFile("test1.txt", adjacentRef, weightsRef);
+    ShortestPathLib::readGraphFromFile("test2.txt", adjacentRef, weightsRef);
     ShortestPathLib::Graph graph = {adjacentRef, weightsRef};
     std::vector<int> shouldEqualTo = {0, 1};
     XCTAssertEqual(ShortestPathLib::shortestPath(graph, 0, 1), shouldEqualTo);
